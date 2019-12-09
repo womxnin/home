@@ -5,44 +5,54 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
-const TEAM = [
+const MUSIC = [
   {
-    name: 'Josh Peck',
+    name: 'Letters EP',
     image: 'josh.jpg',
-    role: 'Founder',
+    role: 'Songs in 3D and Stereo',
   },
-  {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    {
+    name: 'For No One',
+    image: 'josh.jpg',
+    role: 'The Beatles in 3D and Stereo',
   },
-  {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    {
+    name: 'Fitter Happier',
+    image: 'josh.jpg',
+    role: 'Radiohead with Mac OS Speech Synthesis',
   },
-  {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
-  },
-  {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
-  },
+  // {
+  //   name: 'Lisa Haydon',
+  //   image: 'lisa.jpg',
+  //   role: 'Songs in 3D',
+  // },
+  // {
+  //   name: 'Ashlyn Harris',
+  //   image: 'ashlyn.jpg',
+  //   role: 'Songs in 3D and Stereo',
+  // },
+  // {
+  //   name: 'Todd Joseph',
+  //   image: 'todd.jpg',
+  //   role: 'Designer',
+  // },
+  // {
+  //   name: 'Martin White',
+  //   image: 'martin.jpeg',
+  //   role: 'Backend Engineer',
+  // },
+  // {
+  //   name: 'Rose Leslie',
+  //   image: 'rose.jpeg',
+  //   role: 'Marketing',
+  // },
 ];
 
-const Team = () => (
+const Music = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "team" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "music" } }) {
           edges {
             node {
               relativePath
@@ -54,7 +64,7 @@ const Team = () => (
             }
           }
         }
-        art_team: file(
+        team_work: file(
           sourceInstanceName: { eq: "art" }
           name: { eq: "team_work" }
         ) {
@@ -67,11 +77,12 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="music" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
-          <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+          <h1>create</h1>
+          <h2>songs with tech</h2>
+          <MusicGrid>
+            {MUSIC.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
@@ -84,12 +95,12 @@ const Team = () => (
                 </div>
               );
             })}
-          </TeamGrid>
+          </MusicGrid>
           <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <Img fluid={data.team_work.childImageSharp.fluid} />
           </Art>
           <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <Img fluid={data.team_work.childImageSharp.fluid} />
           </ArtMobile>
         </Container>
       </Section>
@@ -97,7 +108,7 @@ const Team = () => (
   />
 );
 
-const TeamGrid = styled.div`
+const MusicGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: min-content;
@@ -122,7 +133,7 @@ const TeamGrid = styled.div`
 
 const Art = styled.figure`
   width: 800px;
-  margin: -80px 0;
+  margin: -60px 0;
   position: absolute;
   top: 0;
   left: 70%;
@@ -158,4 +169,4 @@ const Subtitle = styled.p`
   color: ${props => props.theme.color.black.light};
 `;
 
-export default Team;
+export default Music;

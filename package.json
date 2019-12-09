@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-absurd",
-  "private": true,
-  "description": "An absurd starter for Gatsby",
+  "name": "womxnin",
+  "description": "womxn in music",
   "version": "0.1.0",
-  "author": "Ajay NS <ajay.ns@outlook.com>",
+  "author": "Jessica Chase Ajay NS <ajay.ns@outlook.com>",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",
@@ -36,9 +35,11 @@
     "dev": "gatsby develop",
     "start": "npm run dev",
     "format": "prettier --write \"src/**/*.js\"",
-    "clean": "rm -rf .cache && rm -rf public"
+    "clean": "rm -rf .cache && rm -rf public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "prettier": "^1.15.2"
   }
 }

@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  pathPrefix: "/music",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -17,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `team`,
-        path: `${__dirname}/src/images/team`,
+        name: `music`,
+        path: `${__dirname}/src/images/music`,
       },
     },
     {
@@ -33,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `womxnin music`,
+        short_name: `womxnin`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,

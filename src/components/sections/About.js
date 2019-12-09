@@ -47,46 +47,47 @@ const About = () => (
       <Section id="about">
         <Container>
           <Grid>
-            <div>
-              <h2>Speed past the competition</h2>
-              <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-          <Grid inverse>
             <Art>
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>womxn led music creation</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                documentation of songwriting, tool building, <br /> performance,
+                production, engineering, <br /> mix, and master
               </p>
             </div>
           </Grid>
-          <Grid>
+          <Grid inverse>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>
+                wom·xn <br />
+                /ˈwimin/
+              </h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                inclusive spelling of "women" which brings up <br />
+                recognition of prejudice, discrimination and institutional
+                barriers <br />
+                womxn have faced
                 <br />
+                built upon gender as a social construct
                 <br />
-                Gatsby is fast in every way that matters.
+                which can and should be trifled with
+                <br />
               </p>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
+          </Grid>
+          <Grid>
+            <Art>
+              <Img fluid={data.art_fast.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>womxn led workshops</h2>
+              <p>tech, new and old <br/> for making music</p>
+            </div>
           </Grid>
         </Container>
       </Section>
@@ -97,7 +98,7 @@ const About = () => (
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-gap: 40px;
+  grid-gap: 20px;
   text-align: right;
   align-items: center;
   justify-items: center;
@@ -107,7 +108,7 @@ const Grid = styled.div`
     props.inverse &&
     `
     text-align: left;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 3fr 2fr;
   `}
 
   h2 {

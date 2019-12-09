@@ -15,7 +15,7 @@ const Header = () => (
           name: { eq: "build" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -31,16 +31,15 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                womxn led
                 <br />
-                every way
+                music + tech
                 <br />
-                that matters
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="#">
+                  explore -->
                 </StyledExternalLink>
               </p>
             </Text>
@@ -61,7 +60,7 @@ const HeaderWrapper = styled.header`
 `;
 
 const Art = styled.figure`
-  width: 100%;
+  width: 50%;
   margin: 0;
 
   > div {
@@ -69,7 +68,10 @@ const Art = styled.figure`
     margin-bottom: -4.5%;
 
     @media (max-width: ${props => props.theme.screen.md}) {
-      width: 100%;
+      width: 70%;
+      margin-top: -25%;
+      margin-left: 125%;
+      margin-bottom: -4%;
     }
   }
 `;
@@ -78,11 +80,11 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 34px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    grid-gap: 60px;
 
     > ${Art} {
       order: 2;
