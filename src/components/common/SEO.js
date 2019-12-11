@@ -4,8 +4,8 @@ import Helmet from 'react-helmet';
 const SEO_DATA = {
   description: 'womxn led music and tech',
   title: 'womxn in',
-  url: '',
-  author: 'jess',
+  url: 'https://womxnin.github.io/music/',
+  author: 'jessica chase',
   keywords: ['gatsby', 'site', 'music'],
   twitter: {
     id: '@aight_ok',

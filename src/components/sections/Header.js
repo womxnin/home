@@ -38,9 +38,9 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="#">
+                <a href="#music" style={{textDecoration: 'none', color: 'grey'}}>
                   explore -->
-                </StyledExternalLink>
+                </a>
               </p>
             </Text>
           </Grid>

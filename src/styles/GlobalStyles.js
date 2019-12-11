@@ -63,6 +63,13 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  #playpauser {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url("https://image.flaticon.com/icons/svg/3/3745.svg");
+  }
+
   a {
     cursor: pointer;
   }

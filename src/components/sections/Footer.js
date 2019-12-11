@@ -54,7 +54,7 @@ const Footer = () => (
             <Copyright>
               <h2>womxn in</h2>
               <span>
-                illustrations by
+                all work by 
                 {` `}
                 <ExternalLink href="www.jesschase.com">
                   jessica chase
@@ -101,7 +101,7 @@ const Copyright = styled.div`
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: #7553c7;
   }
 `;
 

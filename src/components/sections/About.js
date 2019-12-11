@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import MediaPlayer from '@common/MediaPlayer';
+// import { CirclePlayer } from '@common/CirclePlayer';
 
 import { Section, Container } from '@components/global';
 
@@ -62,14 +64,12 @@ const About = () => (
             <div>
               <h2>
                 wom·xn <br />
-                /ˈwimin/
               </h2>
+              <h2>/ˈwimin/ <MediaPlayer></MediaPlayer></h2>
               <p>
                 inclusive spelling of "women" which brings up <br />
                 recognition of prejudice, discrimination and institutional
-                barriers <br />
-                womxn have faced
-                <br />
+                barriers womxn have faced
                 built upon gender as a social construct
                 <br />
                 which can and should be trifled with
@@ -86,7 +86,9 @@ const About = () => (
             </Art>
             <div>
               <h2>womxn led workshops</h2>
-              <p>tech, new and old <br/> for making music</p>
+              <p>
+                tech, new and old <br /> for making music
+              </p>
             </div>
           </Grid>
         </Container>
@@ -139,5 +141,9 @@ const Art = styled.figure`
   max-width: 380px;
   width: 100%;
 `;
+
+// const PlayWord = styled.div`
+//   background: url("http://image.flaticon.com/icons/svg/10/10430.svg");
+// `;
 
 export default About;
