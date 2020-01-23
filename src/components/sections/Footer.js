@@ -56,7 +56,7 @@ const Footer = () => (
               <span>
                 all work by 
                 {` `}
-                <ExternalLink href="www.jesschase.com">
+                <ExternalLink href="https://www.jesschase.com">
                   jessica chase
                 </ExternalLink>
               </span>
