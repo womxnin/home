@@ -13,11 +13,11 @@ import TwitterIcon from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/',
+    link: 'https://github.com/chasejh',
   },
   {
     icon: InstagramIcon,
-    link: 'https://instagram.com/',
+    link: 'https://instagram.com/omgokfine',
   },
   {
     icon: TwitterIcon,
