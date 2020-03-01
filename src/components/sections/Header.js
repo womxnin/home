@@ -38,8 +38,8 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                <a href="#music" style={{textDecoration: 'none', color: 'grey'}}>
-                  explore -->
+                <a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{textDecoration: 'none', color: 'grey'}}>
+                  get tickets to our upcoming workshop -->
                 </a>
               </p>
             </Text>
