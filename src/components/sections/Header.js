@@ -37,9 +37,12 @@ const Header = () => (
                 <br />
               </h1>
               <br />
-              <p>
+              <p><a href="#join" style={{textDecoration: 'none', color: 'grey'}}>
+                  connect &amp; get involved &#8601;
+                </a>
+                <br/>
                 <a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{textDecoration: 'none', color: 'grey'}}>
-                  get tickets to our upcoming workshop -->
+                  get tickets to our upcoming workshop &#8601;
                 </a>
               </p>
             </Text>

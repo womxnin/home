@@ -81,18 +81,18 @@ const GlobalStyles = createGlobalStyle`
     margin : 20px auto;
     padding: 2em;
     box-sizing: border-box;
-
-    /* we create our grid */
     display: inline-block;
     
     form {
       input {
         width : 22%;
         padding: 8px;
+        
         margin-right : 20px;
         
       }
       #subbtn {
+          margin-top : 8px;
           border-radius: 10px;
           padding: 8px;
           cursor: pointer;
