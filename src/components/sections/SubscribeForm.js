@@ -65,13 +65,13 @@ export default class SubscribeForm extends React.Component {
                             type="text"
                             onChange={this._handleChange}
                             placeholder="first"
-                            name="first"
+                            name="FNAME"
                         />
                         <input
                             type="text"
                             onChange={this._handleChange}
                             placeholder="last"
-                            name="last"
+                            name="LNAME"
                         />
                         <input
                             type="email"
