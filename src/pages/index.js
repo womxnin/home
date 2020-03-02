@@ -8,6 +8,7 @@ import About from '@sections/About';
 import Learn from '@sections/Learn';
 import Music from '@sections/Music';
 import Faq from '@sections/Faq';
+import SubscribeForm from '@sections/SubscribeForm';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Learn />
     <Music />
     {/* <Faq /> */}
+    <SubscribeForm />
     <Footer />
   </Layout>
 );

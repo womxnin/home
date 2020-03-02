@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: "/music",
+  pathPrefix: '/music',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -67,6 +67,12 @@ module.exports = {
           '@styles': path.resolve(__dirname, 'src/styles/'),
           '@static': path.resolve(__dirname, 'static/'),
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://github.us19.list-manage.com/subscribe/post?u=1389d106ea107b27c15b5df89&amp;id=852af867b5', //list endpoint
       },
     },
   ],

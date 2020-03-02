@@ -73,6 +73,34 @@ const GlobalStyles = createGlobalStyle`
   a {
     cursor: pointer;
   }
+
+  #join {
+    position : relative;
+    width : 100%;
+    height : 100%;
+    margin : 20px auto;
+    padding: 2em;
+    box-sizing: border-box;
+
+    /* we create our grid */
+    display: inline-block;
+    
+    form {
+      input {
+        width : 22%;
+        padding: 8px;
+        margin-right : 20px;
+        
+      }
+      #subbtn {
+          border-radius: 10px;
+          padding: 8px;
+          cursor: pointer;
+          background: #4227ad;
+          color: white;
+      }
+    }
+  }
 `;
 
 export default GlobalStyles;
