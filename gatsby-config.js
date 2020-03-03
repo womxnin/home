@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: '/music',
+  pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
