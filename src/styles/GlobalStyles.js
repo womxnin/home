@@ -75,29 +75,29 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #join {
-    position : relative;
-    width : 100%;
-    height : 100%;
-    margin : 20px auto;
-    padding: 2em;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    padding: 10px;
     box-sizing: border-box;
     display: inline-block;
     
     form {
       input {
-        width : 22%;
+        width: 22%;
         padding: 8px;
-        
-        margin-right : 20px;
-        
+        margin-right : 10px; 
       }
       #subbtn {
-          margin-top : 8px;
-          border-radius: 10px;
-          padding: 8px;
-          cursor: pointer;
-          background: #4227ad;
-          color: white;
+        width: 21%;
+        margin-top: 8px;
+        margin-right: 8px;
+        border-radius: 10px;
+        padding: 8px;
+        cursor: pointer;
+        background: #4227ad;
+        color: white;
       }
     }
   }

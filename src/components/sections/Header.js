@@ -37,12 +37,12 @@ const Header = () => (
                 <br />
               </h1>
               <br />
-              <p><a href="#join" style={{textDecoration: 'none', color: 'grey'}}>
-                  connect &amp; get involved &#8601;
+              <p><a href="#join" style={{textDecoration: 'none', color: '#7553c7'}}>
+                  connect &amp; get involved >
                 </a>
                 <br/>
-                <a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{textDecoration: 'none', color: 'grey'}}>
-                  get tickets to our upcoming workshop &#8601;
+                <a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{textDecoration: 'none', color: '#7553c7'}}>
+                  get tickets to our upcoming workshop >
                 </a>
               </p>
             </Text>

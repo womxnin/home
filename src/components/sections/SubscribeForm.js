@@ -10,10 +10,10 @@ import InstagramIcon from '@static/icons/instagram.svg';
 import { StyledContainer } from '../common/Navbar/style';
 
 const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: 'https://github.com/womxnin',
-  },
+  // {
+  //   icon: GithubIcon,
+  //   link: 'https://github.com/womxnin',
+  // },
   {
     icon: InstagramIcon,
     link: 'https://instagram.com/womxn.in',

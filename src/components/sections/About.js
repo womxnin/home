@@ -67,18 +67,19 @@ const About = () => (
               </h2>
               <h2>/ˈwimin/ <MediaPlayer></MediaPlayer></h2>
               <p>
-                inclusive spelling of "women" which brings up <br />
+                inclusive spelling of "women" which brings up
                 recognition of prejudice, discrimination and institutional
                 barriers womxn have faced
                 built upon gender as a social construct
-                <br />
-                which can and should be trifled with
                 <br />
               </p>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
+            <div><p>
+            which can and should be trifled with
+            </p></div>
           </Grid>
           <Grid>
             <Art>
@@ -87,7 +88,7 @@ const About = () => (
             <div>
               <h2>womxn led workshops</h2>
               <p>
-                tech, new and old <br /> for making music
+                tech, new and old for making music
               </p>
             </div>
           </Grid>

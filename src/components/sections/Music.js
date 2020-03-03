@@ -80,7 +80,7 @@ const Music = () => (
       <Section id="music" accent="secondary">
         <Container style={{ position: 'relative' }}>
           <h1>create</h1>
-          <h2>songs with tech</h2>
+          <h3>songs made with custom and new tech</h3>
           <MusicGrid>
             {MUSIC.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
