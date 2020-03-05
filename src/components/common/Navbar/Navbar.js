@@ -59,7 +59,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Learn>womxn in</Learn>
+          <Learn><a href="#" style={{ color: 'black', textDecoration: 'none'}}>womxn in</a></Learn>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

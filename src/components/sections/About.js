@@ -67,26 +67,21 @@ const About = () => (
               </h2>
               <h2>/ˈwimin/ <MediaPlayer></MediaPlayer></h2>
               <p>
-                inclusive spelling of "women" which brings up
-                recognition of prejudice, discrimination and institutional
-                barriers womxn have faced
-                built upon gender as a social construct
+                inclusive spelling of "women" <br/>
+                we question norms, discrimination and institutional barriers due to social misconception of gender
                 <br />
               </p>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
-            <div><p>
-            which can and should be trifled with
-            </p></div>
           </Grid>
           <Grid>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>womxn led workshops</h2>
+              <h2><a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{color: "black", textDecoration: "none"}}>womxn led workshops</a></h2>
               <p>
                 tech, new and old for making music
               </p>

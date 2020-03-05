@@ -74,23 +74,25 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
-  #join {
+  #joinus {
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 20px auto;
-    padding: 10px;
     box-sizing: border-box;
     display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+
     
     form {
       input {
-        width: 22%;
+        width: 21%;
         padding: 8px;
         margin-right : 10px; 
       }
       #subbtn {
-        width: 21%;
+        font-size: 14px;
+        width: 22%;
         margin-top: 8px;
         margin-right: 8px;
         border-radius: 10px;

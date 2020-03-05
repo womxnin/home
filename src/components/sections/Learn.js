@@ -119,7 +119,7 @@ const UsedBy = () => (
         <StyledContainer>
           <div>
             <h1>learn + teach</h1>
-            <h3>workshops for music creation with</h3>
+            <h3><a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{color: "black"}}>workshops for music creation with</a></h3>
             <LogoGrid>
               {/* {LOGOSPLUS.map(({ logo, link, info }) => (
                 <ExternalLink key={link} href={link}>

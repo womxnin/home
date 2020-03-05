@@ -7,7 +7,7 @@ import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
-import { StyledContainer } from '../common/Navbar/style';
+// import { StyledContainer } from '../common/Navbar/style';
 
 const SOCIAL = [
   // {
@@ -16,7 +16,7 @@ const SOCIAL = [
   // },
   {
     icon: InstagramIcon,
-    link: 'https://instagram.com/womxn.in',
+    link: 'https://instagram.com/womxn_in',
   }
 ];
 export default class SubscribeForm extends React.Component {
@@ -51,6 +51,7 @@ export default class SubscribeForm extends React.Component {
     render() {
         return (
         <Section id="join" accent="secondary">
+        <div id="joinus">
         <StyledContainer style={{ position: 'relative', display: 'inline-block' }}>
           <h2>join womxnin!<SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
@@ -59,7 +60,7 @@ export default class SubscribeForm extends React.Component {
                 </ExternalLink>
               ))}
             </SocialIcons></h2>
-          <p>(we won't spam you)</p> <br/>
+          <p>(all are welcome &amp; we won't spam you)</p> <br/>
            <form onSubmit={this._handleSubmit}>
                         <input
                             type="text"
@@ -84,11 +85,23 @@ export default class SubscribeForm extends React.Component {
             </form>
 
             
-          </StyledContainer>
+          </StyledContainer></div>
           </Section>
         );     
     }
 }
+
+const StyledContainer = styled(Container)`
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  text-align: left;
+  padding-top: 10px;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    justify-content: center;
+  }
+`;
 
 const SocialIcons = styled.div`
   display: inline;
