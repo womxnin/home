@@ -70,39 +70,15 @@ const GlobalStyles = createGlobalStyle`
     background: url("https://image.flaticon.com/icons/svg/3/3745.svg");
   }
 
+  #join {
+    padding 90px 0;
+  }
+
   a {
     cursor: pointer;
   }
 
-  #joinus {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    
-    form {
-      input {
-        width: 21%;
-        padding: 8px;
-        margin-right : 10px; 
-      }
-      #subbtn {
-        font-size: 14px;
-        width: 22%;
-        margin-top: 8px;
-        margin-right: 8px;
-        border-radius: 10px;
-        padding: 8px;
-        cursor: pointer;
-        background: #4227ad;
-        color: white;
-      }
-    }
-  }
+  
 `;
 
 export default GlobalStyles;

@@ -8,7 +8,7 @@ import SubscribeForm from '@sections/SubscribeForm';
 import About from '@sections/About';
 import Learn from '@sections/Learn';
 import Music from '@sections/Music';
-import Faq from '@sections/Faq';
+//import Faq from '@sections/Faq';
 
 import Footer from '@sections/Footer';
 
