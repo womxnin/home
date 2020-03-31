@@ -41,9 +41,6 @@ const Header = () => (
                   connect &amp; get involved >>
                 </a>
                 <br/>
-                <a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{textDecoration: 'none', color: '#7553c7'}}>
-                  attend your first event >>
-                </a>
               </p>
             </Text>
           </Grid>
