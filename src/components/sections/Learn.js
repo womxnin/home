@@ -4,41 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
-// import ExternalLink from '@common/ExternalLink';
 
-// import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-// import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-// import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-// import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-// import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-// import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
-
-// const LOGOS = [
-//   {
-//     logo: AirbnbLogo,
-//     link: 'https://airbnb.io',
-//   },
-//   {
-//     logo: AppleMusicLogo,
-//     link: 'https://www.apple.com/in/music/',
-//   },
-//   {
-//     logo: CokeLogo,
-//     link: 'https://coca-cola.com',
-//   },
-//   {
-//     logo: NodeLogo,
-//     link: 'https://nodejs.org',
-//   },
-//   {
-//     logo: NikeLogo,
-//     link: 'https://nike.com',
-//   },
-//   {
-//     logo: InstagramLogo,
-//     link: 'https://instagram.com',
-//   },
-// ];
 
 const LOGOSPLUS = [
   {
@@ -92,9 +58,29 @@ const UsedBy = () => (
             }
           }
         }
-        tonejs_logo: file(
+        apple_logo: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tonejs_logo" }
+          name: { eq: "apple_logo" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        windows_logo: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "windows_logo" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        ableton_logo: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "ableton_logo" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1200) {
@@ -119,14 +105,8 @@ const UsedBy = () => (
         <StyledContainer>
           <div>
             <h1>learn + teach</h1>
-            <h3><a href="https://www.eventbrite.com/e/hijack-befriend-your-mac-tickets-94038267991" style={{color: "black"}}>workshops for music creation with</a></h3>
+            <h3>workshops for music creation with</h3>
             <LogoGrid>
-              {/* {LOGOSPLUS.map(({ logo, link, info }) => (
-                <ExternalLink key={link} href={link}>
-                  <LogoArt>
-                  <Img fluid=""/></LogoArt>
-                </ExternalLink>
-              ))} */}
               <LogoArt>
                   <Img fluid={data.cycling74_logo.childImageSharp.fluid} />
               </LogoArt>
@@ -134,10 +114,16 @@ const UsedBy = () => (
                   <Img fluid={data.p5_logo.childImageSharp.fluid} />
               </LogoArt>
               <LogoArt>
-                  <Img fluid={data.tonejs_logo.childImageSharp.fluid} />
+                  <Img fluid={data.windows_logo.childImageSharp.fluid} />
+              </LogoArt>
+               <LogoArt>
+                  <Img fluid={data.apple_logo.childImageSharp.fluid} />
               </LogoArt>
               <LogoArt>
                   <Img fluid={data.dolby_logo.childImageSharp.fluid} />
+              </LogoArt>
+              <LogoArt>
+                  <Img fluid={data.ableton_logo.childImageSharp.fluid} />
               </LogoArt>
             </LogoGrid>
             

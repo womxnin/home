@@ -7,45 +7,21 @@ import { Section, Container } from '@components/global';
 
 const MUSIC = [
   {
-    name: 'Letters EP',
-    image: 'josh.jpg',
+    name: 'Original songs',
+    image: 'rose.jpg',
     role: 'Songs in 3D and Stereo',
   },
     {
-    name: 'For No One',
-    image: 'josh.jpg',
-    role: 'The Beatles in 3D and Stereo',
+    name: 'Cover songs',
+    image: 'rose.jpg',
+    role: 'reimagine the Beatles in 3D and Stereo',
   },
     {
-    name: 'Fitter Happier',
-    image: 'josh.jpg',
-    role: 'Radiohead with Mac OS Speech Synthesis',
+    name: 'Song deepfakes',
+    image: 'rose.jpg',
+    role: 'dissecting & recreating songs, track by track',
   },
-  // {
-  //   name: 'Lisa Haydon',
-  //   image: 'lisa.jpg',
-  //   role: 'Songs in 3D',
-  // },
-  // {
-  //   name: 'Ashlyn Harris',
-  //   image: 'ashlyn.jpg',
-  //   role: 'Songs in 3D and Stereo',
-  // },
-  // {
-  //   name: 'Todd Joseph',
-  //   image: 'todd.jpg',
-  //   role: 'Designer',
-  // },
-  // {
-  //   name: 'Martin White',
-  //   image: 'martin.jpeg',
-  //   role: 'Backend Engineer',
-  // },
-  // {
-  //   name: 'Rose Leslie',
-  //   image: 'rose.jpeg',
-  //   role: 'Marketing',
-  // },
+
 ];
 
 const Music = () => (
@@ -80,7 +56,7 @@ const Music = () => (
       <Section id="music" accent="secondary">
         <Container style={{ position: 'relative' }}>
           <h1>create</h1>
-          <h3>songs made with custom and new tech</h3>
+          <h3>songs with what you already have,  <br/>discover new tools, and customize your own tech</h3>
           <MusicGrid>
             {MUSIC.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
