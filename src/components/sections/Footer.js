@@ -18,11 +18,7 @@ const SOCIAL = [
   {
     icon: InstagramIcon,
     link: 'https://instagram.com/omgokfine',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/',
-  },
+  }
 ];
 
 const Footer = () => (
@@ -54,7 +50,7 @@ const Footer = () => (
             <Copyright>
               <h2>womxn in</h2>
               <span>
-                all work by 
+                work by 
                 {` `}
                 <ExternalLink href="https://www.jesschase.com">
                   jessica chase

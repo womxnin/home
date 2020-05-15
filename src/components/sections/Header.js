@@ -38,7 +38,10 @@ const Header = () => (
               </h1>
               <br />
               <p><a href="#join" style={{textDecoration: 'none', color: '#7553c7'}}>
-                  connect &amp; get involved >>
+                  get involved >>
+                </a><br/>
+                <a href="mailto:womxnin@gmail.com" style={{textDecoration: 'none', color: '#7553c7'}}>
+                  contact us >>
                 </a>
                 <br/>
               </p>
