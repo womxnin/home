@@ -6,24 +6,6 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 
 
-const LOGOSPLUS = [
-  {
-
-    link: 'https://cycling74.com/products/max/',
-    info: "cycling74_logo",
-  },
-  {
-
-    link: 'https://www.p5js.org',
-    info: "p5_logo",
-  },
-  {
-
-    link: 'https://dolby.com',
-    info: "dolby_logo",
-  }
-];
-
 const UsedBy = () => (
   <StaticQuery
     query={graphql`

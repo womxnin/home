@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
@@ -102,14 +101,5 @@ const Text = styled.div`
     justify-self: start;
   }
 `;
-
-// const StyledExternalLink = styled(ExternalLink)`
-//   color: inherit;
-//   text-decoration: none;
-
-//   &:hover {
-//     color: ${props => props.theme.color.black.regular};
-//   }
-// `;
 
 export default Header;

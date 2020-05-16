@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Media, Player, controls } from 'react-media-player'
 import PlayAudio from '@common/PlayAudio';
-const { PlayPause } = controls
 
 class MediaPlayer extends Component {
   render() {
