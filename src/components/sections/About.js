@@ -67,12 +67,7 @@ const About = () => (
               </h2>
               <h2>/ˈwimin/ <MediaPlayer></MediaPlayer></h2>
               <p>
-                a non-spelling of "women" used to question societal{' '}
-                <div style={{ display: 'contents', fontStyle: 'italic' }}>
-                  {' '}
-                  and{' '}
-                </div>{' '}
-                internal gender bias and how it is enforced by norms
+                a non-spelling of "women" used to question societal and internal gender bias and how it is enforced by norms
                 <br />
               </p>
             </div>

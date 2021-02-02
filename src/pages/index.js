@@ -8,6 +8,7 @@ import SubscribeForm from '@sections/SubscribeForm';
 import About from '@sections/About';
 import Learn from '@sections/Learn';
 import Music from '@sections/Music';
+import Events from '@sections/Events';
 //import Faq from '@sections/Faq';
 
 import Footer from '@sections/Footer';
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Navbar />
     <Header />
     <SubscribeForm />
+    <Events />
     <About />
     <Learn />
     <Music />

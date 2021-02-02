@@ -7,7 +7,7 @@ class MediaPlayer extends Component {
     return (
       <Media>
         <div style={{display: 'inline'}}>
-          <Player src="http://ssl.gstatic.com/dictionary/static/sounds/20180430/women--_us_1.mp3" />
+          <Player src="https://ssl.gstatic.com/dictionary/static/sounds/20180430/women--_us_1.mp3" />
           <PlayAudio></PlayAudio>
         </div>
       </Media>

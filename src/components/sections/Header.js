@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
+import HeaderButton from '@common/HeaderButton';
 
 const Header = () => (
   <StaticQuery
@@ -28,7 +29,7 @@ const Header = () => (
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
-            <Text>
+            <Text style={{justifySelf: 'center'}}>
               <h1>
                 womxn led
                 <br />
@@ -36,14 +37,13 @@ const Header = () => (
                 <br />
               </h1>
               <br />
-              <p><a href="#join" style={{textDecoration: 'none', color: '#7553c7'}}>
-                  get involved >>
-                </a><br/>
-                <a href="mailto:womxnin@gmail.com" style={{textDecoration: 'none', color: '#7553c7'}}>
-                  contact us >>
-                </a>
+              <div style={{display: 'inline-flex', marginBottom: '10px', flexDirection: 'column', minInlineSize: '-webkit-fill-available',}}>
+                <HeaderButton url="#join" text="get involved"/>
                 <br/>
-              </p>
+                <HeaderButton url="https://www.femilysf.com/girls-code-fest" text='register for girls code fest'/>
+                <br/>
+                <HeaderButton url="mailto:womxnin@gmail.com" text="contact us"/>
+              </div>
             </Text>
           </Grid>
         </Container>

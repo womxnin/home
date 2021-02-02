@@ -1,5 +1,5 @@
-# womxn in music
-## https://womxnin.github.io/music/
+# womxn in music & tech
+## https://womxnin.github.io/
 
 A spotlight for womxn led work in music + tech by [Jessica Chase](https://www.jesschase.com). 
 
@@ -12,9 +12,11 @@ Install the dependencies:
 
 `yarn install`
 
-Run the development server:
+Run the development server on `http://localhost:8000/`
 
 `yarn dev`
+
+
 
 Production build to /public:
 
