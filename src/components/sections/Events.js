@@ -7,34 +7,34 @@ import { Section, Container } from '@components/global';
 
 const EVENTS = [
   {
-    name: 'femily',
-    image: 'femily_logo.jpeg',
-    role: '',
+    name: 'femz',
+    image: 'femz_logo.png',
+    url: 'https://femzquared.com',
   },
   {
     name: 'imagilabs',
     image: 'ImagiLabs_logo.png',
-    role: '',
+    url: 'https://imagilabs.com/',
   },
   {
     name: 'liveroom',
     image: 'LiveRoom_logo.png',
-    role: '',
+    url: 'https://liveroom.media/',
   },
   {
     name: 'pbw',
     image: 'pbw_logo.png',
-    role: '',
+    url: 'https://productsbywomen.com/',
   },
   {
     name: 'wtr',
     image: 'wtr_logo.png',
-    role: '',
+    url: 'https://www.instagram.com/womenthatrock/',
   },
   {
     name: 'womxnin',
     image: 'womxninlabel_logo.png',
-    role: '',
+    url: 'https://instagram.com/womxn_in/',
   },
 ];
 
@@ -70,21 +70,27 @@ const Events = () => (
       <Section id="events" accent="secondary" style={{ backgroundColor: '#b89bff' }}>
         <Container style={{ position: 'relative'}}>
           <h1>events</h1>
-          <h3 style={{textAlign: 'center'}}>girls code fest with <a href="https://www.femilysf.com/girls-code-fest">femily</a></h3>
-          <RegisterButton>REGISTER FREE</RegisterButton>
+          <StyledEvent>
+          <h3 style={{textAlign: 'center'}}>girls code fest with <a href="https://femzquared.com/girls-code-fest/" target="_blank">femzquared</a></h3>
+          <h3 style={{textAlign: 'center', fontSize: '18px'}}>March 2021 (13, 20, 27)</h3>
+          <p style={{textAlign: 'center', margin: '10px'}}>Girls Code Fest is a 3-Saturday global, virtual STEAM festival consisting of educational panels and hands-on workshops within 6 industries: Software Engineering; Data Science + Machine Learning + AI; Product/VR/XR. </p>
+          <RegisterButton onClick={()=>window.open("https://linktr.ee/girlscodefest", "_blank")}>REGISTER FREE</RegisterButton>
           <EventsGrid>
-            {EVENTS.map(({ name, image, role }) => {
+            {EVENTS.map(({ name, image, url }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
                 <div key={name}>
+                  <a href={url} target="_blank">
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  </a>
                 </div>
               );
             })}
           </EventsGrid>
+          </StyledEvent>
         </Container>
       </Section>
     )}
@@ -133,6 +139,12 @@ const EventsGrid = styled.div`
   @media (max-width: ${props => props.theme.screen.xs}) {
     grid-gap: 24px;
   }
+`;
+
+const StyledEvent = styled.div`
+  background-color: #ffffff66;
+  padding: 15px;
+  border-radius: 10px;
 `;
 
 export default Events;

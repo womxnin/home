@@ -4,7 +4,11 @@ import styled from 'styled-components';
 
 export default class HeaderButton extends React.Component {
   _handleClick = e => {
-    window.location.href=this.props.url;
+    if (this.props.target) {
+      window.open(this.props.url, this.props.target);
+    } else {
+      window.location.href = this.props.url;
+    }
   };
 
   render() {

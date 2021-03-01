@@ -40,7 +40,7 @@ const Header = () => (
               <div style={{display: 'inline-flex', marginBottom: '10px', flexDirection: 'column', minInlineSize: '-webkit-fill-available',}}>
                 <HeaderButton url="#join" text="get involved"/>
                 <br/>
-                <HeaderButton url="https://www.femilysf.com/girls-code-fest" text='register for girls code fest'/>
+                <HeaderButton url="https://www.femzquared.com/girls-code-fest/" target="_blank" text='register for girls code fest'/>
                 <br/>
                 <HeaderButton url="mailto:womxnin@gmail.com" text="contact us"/>
               </div>
